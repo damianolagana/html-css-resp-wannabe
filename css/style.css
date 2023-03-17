@@ -127,17 +127,32 @@ img {
 /************************************************
     SOLUZIONE RESPONSIVE
  ************************************************/
-/* REGOLE PER TABLET */
-@media screen and(max-width: 768px){
 
-    
+/* Regola tra 768px e 1160 */
+@media screen and (min-width:768px) and (max-width:1160px) {
+    .container{
+        width: 100%;
+    }
+}
+
+
+/* REGOLE PER TABLET */
+@media screen and (max-width:768px){
+    .container{
+        width: 100%;
+    }
+
+    .row{
+        flex-wrap: wrap;
+    }
+
 }
     
 
 
 
- /*REGOLA PER MOBILE */
- @media screen and (max-width:480px){
+/*REGOLA PER MOBILE */
+@media screen and (max-width:480px){
     .container{
         width: 100%;
     }
